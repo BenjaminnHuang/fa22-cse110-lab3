@@ -3,11 +3,25 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="./style.css">
+
+    <style>
+        nav{
+            align-content: center;
+            background-color: rgb(249, 192, 143);
+            display: inline-block;
+        }
+    </style>
+
     <title>Project Progress Minutes</title>
   </head>
   <body>
-    <h1>Team Meeting</h1>
-    <h4>Weekly Brainstorming</h4> 
+
+    <div id="banner">
+        <h1 style="color: rgb(95, 158, 160);">Team Meeting</h1>
+        <h4 style="color: rgb(95, 158, 160);">Weekly Brainstorming</h4> 
+    </div>
+
     <img src="./images/brainstorm.png" alt=""> 
     <div>
         <nav>
@@ -19,13 +33,16 @@
             <a href="#note">Note</a>
         </nav>
     </div>
-    <hr>
-    <h4>Date: </h4>
-    <h4>Time: </h4>
-    <h4>Facilitator: </h4> 
-    <hr>
 
-    <div id="attendence">
+    <br>
+
+    <div id="date">
+        <h4>Date: </h4>
+        <h4>Time: </h4>
+        <h4>Facilitator: </h4>
+    </div> 
+
+    <div class="section" id="attendence">
         <h2>Attendence</h2>
         <input type="checkbox" id="person1">
         <label for="person1">John Mayer</label><br>
@@ -38,7 +55,7 @@
     </div>
     <hr>
     
-    <div id="agenda">
+    <div class="section" id="agenda">
         <h2>Meeting Agenda</h2>
         <p>Get to know each other</p>
         <ul>
@@ -54,7 +71,7 @@
     </div>
     <hr>
 
-    <div id="tasks">
+    <div class="section" id="tasks">
         <h2>Tasks</h2>
         <h4>Tasks From Last Time</h4>
 
@@ -73,7 +90,7 @@
 
     <hr>
 
-    <div id="audio">
+    <div class="section" id="audio">
         <h2>Important Audio Recording</h2>
         <audio controls>
             <source src="./audio/rickroll.mp3" type="audio/mp3">
@@ -82,7 +99,7 @@
 
     <hr>
 
-    <div id="video">
+    <div class="section" id="video">
         <h2>Important Video Recording</h2>
         <video width="320" height="240" controls>
             <source src="./videos/JM1.mp4" type="video/mp4">
@@ -91,7 +108,7 @@
 
     <hr>
 
-    <div id="note">
+    <div class="section" id="note">
         <h2>Extra Note/Concern: </h2>
         <br><br><br><br>
 
