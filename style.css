@@ -1,29 +1,30 @@
-h1{
-    /*text-align: center;*/
-}
 
 #banner{
+    position: sticky;
+    top: 0;
     background-color: rgb(249, 249, 98);
+    padding-top: 1ex;
+    padding-bottom: 1ex;
+    margin-bottom: 2rem;
+    border: 5px dashed gray;
 }
 
 body{
     background-color: #FAEBD7;
 }
 
-a{
-
-}
-
 img{
     display: block;
     margin-left: auto;
     margin-right: auto;
+    border-radius: 20px;
 }
 
 #date{
-    background-color: hsl(0, 35%, 89%);
-    /*border:5px solid lightcoral;
-    padding: 5px 0px 5px 10px;*/
+    height: 120px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #date h4{
@@ -32,15 +33,31 @@ img{
 
 .section{
     background-color: #a3c0f5;
+    margin: 1cm auto 1cm auto;
+    padding-bottom: 1em;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    border-radius: 1pc;
+    max-width: 70%;
 }
 
 .section h2{
+    width: max-content;
+    height: 2ex;
+    text-decoration: white underline;
+    color: rgb(255, 255, 84);
+    background-color: rgb(121, 121, 121);
     text-align: center;
+    margin: 12px auto;
+    padding: 2mm 3mm 4mm 3mm;
+    border-radius: 1pc;
+    min-width: 20%;
+    max-width: 50%;
 }
 
-h2{
-    color: rgb(255, 255, 84);
-    background-color: rgb(193, 191, 191);
+.sectionContain{
+    margin-left: 10%;
 }
 
 audio{

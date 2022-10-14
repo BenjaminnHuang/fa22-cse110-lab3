@@ -9,6 +9,11 @@
         nav{
             background-color: rgb(249, 192, 143);
             display: inline-block;
+            position: fixed;
+            top: 0;
+            border: 1px solid white;
+            border-radius: 10px;
+            padding: 10px 10px 10px 10px;
         }
     </style>
 
@@ -17,21 +22,21 @@
   <body>
 
     <div id="banner">
-        <h1 style="color: rgb(95, 158, 160); text-align: center;">Team Meeting</h1>
-        <h4 style="color: rgb(95, 158, 160); text-align: center;">Weekly Brainstorming</h4> 
+        <h1 style="color: rgb(66, 110, 111); text-align: center;">Team Meeting</h1>
+        <h4 style="color: rgb(66, 110, 111); text-decoration: green wavy underline; 
+        text-align: center;">Weekly Brainstorming</h4> 
     </div>
 
+    <nav>
+        <a href="#attendence">Attendence</a>
+        <a href="#agenda">Agenda</a>
+        <a href="#tasks">Task</a>
+        <a href="#audio">Audio</a>
+        <a href="#video">Video</a>
+        <a href="#note">Note</a>
+    </nav>
+
     <img src="./images/brainstorm.png" alt=""> 
-    <div>
-        <nav>
-            <a href="#attendence">Attendence</a>
-            <a href="#agenda">Agenda</a>
-            <a href="#tasks">Task</a>
-            <a href="#audio">Audio</a>
-            <a href="#video">Video</a>
-            <a href="#note">Note</a>
-        </nav>
-    </div>
 
     <br>
 
@@ -43,48 +48,57 @@
 
     <div class="section" id="attendence">
         <h2>Attendence</h2>
-        <input type="checkbox" id="person1">
-        <label for="person1">John Mayer</label><br>
-        <input type="checkbox" id="person2">
-        <label for="person2">Ed Sheeran</label><br>
-        <input type="checkbox" id="person3">
-        <label for="person3">Shawn Mendes</label><br>
-        <input type="checkbox" id="person4">
-        <label for="person4">Bruno Mars</label><br>
+        <br>
+        <div class="sectionContain">
+            <input type="checkbox" id="person1">
+            <label for="person1">John Mayer</label><br>
+            <input type="checkbox" id="person2">
+            <label for="person2">Ed Sheeran</label><br>
+            <input type="checkbox" id="person3">
+            <label for="person3">Shawn Mendes</label><br>
+            <input type="checkbox" id="person4">
+            <label for="person4">Bruno Mars</label><br>
+        </div>
     </div>
     <hr>
     
     <div class="section" id="agenda">
         <h2>Meeting Agenda</h2>
-        <p>Get to know each other</p>
-        <ul>
-            <li>Introduce yourself to other teamates and exchange contract information</li>
-            <li>Play icebreaker games with the teamates</li>
-        </ul>
-        <p>Discuss the Project</p>
-        <ul>
-            <li>Come out with the general idea of the project</li>
-            <li>Dicuss how many divisions are needed for this project</li>
-            <li>Decides who goes to which division</li>
-        </ul>
+
+        <div class="sectionContain">
+            <p>Get to know each other</p>
+            <ul>
+                <li>Introduce yourself to other teamates and exchange contract information</li>
+                <li>Play icebreaker games with the teamates</li>
+            </ul>
+            <p>Discuss the Project</p>
+            <ul>
+                <li>Come out with the general idea of the project</li>
+                <li>Dicuss how many divisions are needed for this project</li>
+                <li>Decides who goes to which division</li>
+            </ul>
+        </div>
     </div>
     <hr>
 
     <div class="section" id="tasks">
         <h2>Tasks</h2>
-        <h4>Tasks From Last Time</h4>
 
-        <input type="checkbox" id="task1">
-        <label for="task1">Come out with a project name</label><br>
-        <input type="checkbox" id="task2">
-        <label for="task2">Icebreaker Videos</label><br>
- 
-        <h4>New Tasks</h4>
-        <ul>
-            <li>Giving the general idea of the project</li>
-            <li>Assign people to different division</li>
-            <li>Having Boba together</li>
-        </ul>        
+        <div class="sectionContain">
+            <h4>Tasks From Last Time</h4>
+
+            <input type="checkbox" id="task1">
+            <label for="task1">Come out with a project name</label><br>
+            <input type="checkbox" id="task2">
+            <label for="task2">Icebreaker Videos</label><br>
+    
+            <h4>New Tasks</h4>
+            <ul>
+                <li>Giving the general idea of the project</li>
+                <li>Assign people to different division</li>
+                <li>Having Boba together</li>
+            </ul> 
+        </div>       
     </div>
 
     <hr>
@@ -109,12 +123,15 @@
 
     <div class="section" id="note">
         <h2>Extra Note/Concern: </h2>
-        <br><br><br><br>
+        
+        <div class="sectionContain">
+            <br><br><br><br>
 
-        <details>
-            <summary>Summary</summary>
-            <p>Meeting Summary Here!</p>
-          </details>
+            <details>
+                <summary>Summary</summary>
+                <p>Meeting Summary Here!</p>
+            </details>
+        </div>
     </div>
 
     <hr>
