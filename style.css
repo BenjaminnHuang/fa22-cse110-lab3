@@ -67,14 +67,12 @@ a[href]{
 
 #box-2{
     order:0;
-    width: 3rem;
     background-color: #d47ed6;
     border: 10px dashed lightgoldenrodyellow;
 }
 
 #box-3{
     order:2;
-    width: 3rem;
     background-color: #8fdea9;
     border: 10px dashed lightgoldenrodyellow;
 }
@@ -197,6 +195,11 @@ video, audio{
 
     .section h2{
         height:max-content;
+    }
+
+    .container-2{
+        flex-wrap: nowrap;
+        flex-direction: column;
     }
 }
 
