@@ -1,7 +1,112 @@
+/* This is my stylesheet of my Meeting Minutes */
+
+* {
+    font-style: italic;
+}
+
+a[href]{
+    font-family: 'Fuzzy Bubbles', cursive;
+}
+
+/* grid part */
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap:10px;
+}
+
+.item-1{
+    background-color:aliceblue;
+    padding-left: 10px;
+    border-radius: 10px;
+    margin-right: 10px;
+    margin-left: 5px;
+    font-family: 'Noto Sans', sans-serif;
+
+}
+
+.item-2{
+    background-color:aliceblue;
+    padding-left: 10px;
+    border-radius: 10px;
+    margin-right: 10px;
+    margin-left: 5px;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.item-3{
+    background-color:aliceblue;
+    padding-left: 10px;
+    border-radius: 10px;
+    margin-right: 10px;
+    margin-left: 5px;
+    height: 7.7rem;
+    grid-column: span 2;
+    font-family: 'Noto Sans', sans-serif;
+
+}
+/* end of grid part */
+
+/* flexbox part */
+.container-1{
+    display: flex;
+    margin-bottom: 10px;
+    flex-flow: row-reverse;
+}
+
+.container-2{
+    display: flex;
+    flex-flow: wrap;
+    flex-direction: row-reverse;
+}
+
+#box-1{
+    flex-grow: 4;
+    order:1;
+}
+
+#box-2{
+    order:0;
+    width: 3rem;
+    background-color: #d47ed6;
+    border: 10px dashed lightgoldenrodyellow;
+}
+
+#box-3{
+    order:2;
+    width: 3rem;
+    background-color: #8fdea9;
+    border: 10px dashed lightgoldenrodyellow;
+}
+
+.box{
+   
+    height: 10rem;
+    border: 1px solid black;
+}
+
+#blue-box{
+    flex: 1;
+    background-color: blue;
+}
+
+#white-box{
+    flex-grow: 2;
+    background-color: white;
+}
+
+#red-box{
+    flex:1;
+    background-color: red;
+}
+/* end of flexbox */
 
 #banner{
+    font-size: 1.5rem;
+    font-family: 'Fuzzy Bubbles', cursive;
     position: sticky;
     top: 0;
+    opacity: 0.7;
     background-color: rgb(249, 249, 98);
     padding-top: 1ex;
     padding-bottom: 1ex;
@@ -14,9 +119,8 @@ body{
 }
 
 img{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    width: 100%;
+    height: auto;
     border-radius: 20px;
 }
 
@@ -28,7 +132,9 @@ img{
 }
 
 #date h4{
+    padding-left: 40px;
     color: rgb(208, 69, 69);
+    font-family: 'Fuzzy Bubbles', cursive;
 }
 
 .section{
@@ -40,9 +146,18 @@ img{
     border-color: black;
     border-radius: 1pc;
     max-width: 70%;
+    font-family: 'Fuzzy Bubbles', cursive;
 }
 
-.section h2{
+li.li-1 ~ li{
+    color: rgb(43, 133, 153);
+}
+
+li.li-2 + li{
+    color: red;
+}
+.section > h2{
+    font-family: 'Fuzzy Bubbles', cursive;
     width: max-content;
     height: 2ex;
     text-decoration: white underline;
@@ -57,18 +172,31 @@ img{
 }
 
 .sectionContain{
-    margin-left: 10%;
+    margin-left: 40%;
 }
 
-audio{
+video, audio{
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
 
-video{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+/* For responsive code */
+@media all and (max-width: 1020px) {
+    img{
+      position: static;
+    }
+
+    .grid-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .item-3{
+        grid-column: span 1;
+    }
+
+    .section h2{
+        height:max-content;
+    }
 }
 
